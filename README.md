@@ -1,3 +1,71 @@
+def total_even_pairs(src)
+  outer_results = [ ]
+  total = 0 
+  row_index = 0 
+  while row_index <src.count do 
+    if src[row_index][0]%2==0 && src[row_index][1]%2==0
+      total += src[row_index][0]+src[row_index][1]
+    else  
+      nil 
+    end
+    row_index+=1
+  end
+end
+
+error
+
+Failures:
+
+  1) Write a method called "total_even_pairs" that takes in argument of an Array of Arrays containing pairs of numbers returns the sum of the evens found in both-even pair
+     Failure/Error: expect(total_even_pairs(array_3)).to eq(344812)
+
+       expected: 344812
+            got: nil
+
+       (compared using ==)
+     # ./spec/iteration_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+Finished in 0.01592 seconds (files took 0.37699 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/iteration_spec.rb:30 # Write a method called "total_even_pairs" that takes in argument of an Array of Arrays containing pairs of numbers returns the sum of the evens found in both-even pair
+
+def total_even_pairs(src)
+  outer_results = [ ]
+  total = 0 
+  row_index = 0 
+  while row_index <src.count do 
+    if src[row_index][0]%2==0 && src[row_index][1]%2==0
+      total += src[row_index][0]+src[row_index][1]
+    else  
+      nil 
+    end
+    row_index+=1
+  end
+end
+
+error
+
+Failures:
+
+  1) Write a method called "total_even_pairs" that takes in argument of an Array of Arrays containing pairs of numbers returns the sum of the evens found in both-even pair
+     Failure/Error: expect(total_even_pairs(array_3)).to eq(344812)
+
+       expected: 344812
+            got: nil
+
+       (compared using ==)
+     # ./spec/iteration_spec.rb:31:in `block (3 levels) in <top (required)>'
+
+Finished in 0.01592 seconds (files took 0.37699 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/iteration_spec.rb:30 # Write a method called "total_even_pairs" that takes in argument of an Array of Arrays containing pairs of numbers returns the sum of the evens found in both-even pair
+
 # Nested Data Structures: Printing and Coalescing Data
 
 ## Learning Goals
