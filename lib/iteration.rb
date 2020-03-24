@@ -1,44 +1,38 @@
 def join_ingredients(src)
-  outer_results = []
-  row_index = 0
-  while row_index<src.count do 
-    outer_results.push("I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza")
-     row_index+=1 
-    end
-      outer_results
-    end
+  new_array = []
+  array_index =0 
+  while array_index < src.length 
+    new_array.push ("I love #{src[array_index][0]} and #{src[array_index][1]} on my pizza")
+     array_index+=1
+  end
+  new_array
+end
 
 def find_greater_pair(src)
-  outer_results = []
-  row_index = 0
-  while row_index<src.count do 
-    if src[row_index][0]<src[row_index][1]
-      outer_results.push(src[row_index][1])
-    else
-      outer_results.push(src[row_index][0])
+  new_array =[]
+  array_index = 0 
+    while array_index< src.length
+      if src[array_index][0]> src[array_index][1]
+        new_array.push(src[array_index][0])
+      else
+        new_array.push(src[array_index][1])
+      end
+      array_index+=1
     end
-    row_index+=1
-  end
-  outer_results
-    end
-    
-  # src will be an array of [ [number1, number2], ... [numberN, numberM] ]
-  # Produce a new Array that contains the larger number of each of the pairs
-  # that are in the inner Arrays
+    new_array
+end
 
 def total_even_pairs(src)
-  total = 0 
-  row_index = 0 
-  while row_index <src.count do 
-    if src[row_index][0]%2==0 && src[row_index][1]%2==0
-      total += src[row_index][0]+src[row_index][1]
-    end
-    row_index+=1
+  total =0  
+  array_index =0 
+  while array_index<src.length
+      if (src[array_index][0])%2 ==0 && (src[array_index][1])%2 ==0
+        total += src[array_index][0] +src[array_index][1]
+      end
+  array_index+=1 
   end
   total
 end
-  
-    
 
 
 
